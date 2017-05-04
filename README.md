@@ -36,7 +36,7 @@ There are 4 folders in this project:
 ### DB Schema
 I elected to go with a star schema approach since the dimension tables can drive the UI. Imported data from the .csv file is dumped to the staging table. From there, stored procedures populate the dimension tables and fact table.
 
-~[STAT DB Schema](https://github.com/jimwheaton/statapi/statmodel.png "STAT DB Schema")
+~[STAT DB Schema](/statmodel.png?raw=true "STAT DB Schema")
 
 ### Build instructions
 For convenience, this API is running on a VM on Azure. If you're feeling brave and want to build this locally (I believe you're on Macs?) then follow the instructions [here](https://docs.microsoft.com/en-us/aspnet/core/tutorials/your-first-mac-aspnet). You may run into issues with generating the database as the scripts are specific to SQL Server. Let me know if you want to try to build/run this locally and I'll assist you.
