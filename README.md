@@ -34,7 +34,7 @@ There are 4 folders in this project:
 * Data - data layer. Abstracts database. Uses EF Core to generate DB schema and handle any updates to schema. StatContext is used to interact with the DB using model objects.
 
 ### DB Schema
-I elected to go with a star schema approach since the dimension tables can drive the UI. Imported data from the .csv file is dumped to the staging table. From there, stored procedures populate the dimension tables and fact table.
+Since this is a "reporting" app, I elected to go with a star schema. The dimension tables can be used to drive the UI. For performance reasons, imported data from the .csv file is first dumped to the staging table. From there, stored procedures populate the dimension tables and fact table (KeywordRanks).
 
 ![STAT DB Schema](/statmodel.png?raw=true "STAT DB Schema")
 
