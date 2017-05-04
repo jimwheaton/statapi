@@ -42,3 +42,18 @@ Since this is a "reporting" app, I elected to go with a star schema. The dimensi
 For convenience, this API is running on a VM on Azure. If you're feeling brave and want to build this locally (I believe you're on Macs?) then follow the instructions [here](https://docs.microsoft.com/en-us/aspnet/core/tutorials/your-first-mac-aspnet). You may run into issues with generating the database as the scripts are specific to SQL Server. Let me know if you want to try to build/run this locally and I'll assist you.
 
 You can use [Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en) to test out the API running on Azure. I've sent you the URL in an email
+
+### Kanban board
+For simplicity, I used a Kanban board instead of a Scrum board. 
+
+The board can be found [here](https://trello.com/b/sHqoK2N6/stat-api)
+
+The stories are prioritized by their position in the column. Stories at the top are higher priority than ones at the bottom
+The columns in the boards are:
+Backlog - backlog of stories for the project. These can be fully-formed stories, half-baked ideas, or epics. Stories in this column are not scheduled to be worked on
+Approved - stories that have been fully-specified and ready to be worked on.
+In progress - stories currently being developed and tested
+Done - stories have been fully tested. All acceptance criteria met. Ready for deployment.
+In the interest of time, I have only fleshed out a few of the stories on the STAT Client board. You can open the stories for "Visualize rankings as line chart", "Filter rankings", "Import raw ranking data", and "Client shell" to see some examples.  I have also purposely put stories into the different columns so that you get a sense for how they would flow through a Kanban board (the same would apply to Scrum).
+
+
