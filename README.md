@@ -2,10 +2,10 @@
 
 This was built using .NET Core which is cross platform, however it's using SQL Server as the DB and the DB scripts as written may not run on a different DB platform.
 
-To review the code, I recommend downloading Visual Studio Code (https://code.visualstudio.com/). It's cross platform and will make it easier to review C# code. Once installed, you will need to install a C# language extension. Follow the instructions here (https://code.visualstudio.com/docs/languages/csharp).
+To review the code, I recommend downloading [Visual Studio Code](https://code.visualstudio.com/). It's cross platform and will make it easier to review C# code. Once installed, you will need to install a C# language extension. Follow the instructions [here](https://code.visualstudio.com/docs/languages/csharp).
 
 ## Project overview
-This is the api that the client app connects to. It is built using ASP.NET Core (https://github.com/aspnet/Home) and connects to a SQL Server Express database. 
+This is the api that the client app connects to. It is built using [ASP.NET Core](https://github.com/aspnet/Home) and connects to a SQL Server Express database. 
 
 ### General project structure
 There are 4 folders in this project:
@@ -34,6 +34,6 @@ There are 4 folders in this project:
 * Data - data layer. Abstracts database. Uses EF Core to generate DB schema and handle any updates to schema. StatContext is used to interact with the DB using model objects.
 
 ### Build instructions
-For convenience, this API is running on a VM on Azure. If you're feeling brave and want to build this locally (I believe you're on Macs?) then follow the instructions here https://docs.microsoft.com/en-us/aspnet/core/tutorials/your-first-mac-aspnet. You may run into issues with generating the database as the scripts are specific to SQL Server. Let me know if you want to try to build/run this locally and I'll assist you.
+For convenience, this API is running on a VM on Azure. If you're feeling brave and want to build this locally (I believe you're on Macs?) then follow the instructions [here](https://docs.microsoft.com/en-us/aspnet/core/tutorials/your-first-mac-aspnet). You may run into issues with generating the database as the scripts are specific to SQL Server. Let me know if you want to try to build/run this locally and I'll assist you.
 
-You can use Postman (https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en) to test out the API running on Azure. I've sent you the URL in an email
+You can use [Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en) to test out the API running on Azure. I've sent you the URL in an email
