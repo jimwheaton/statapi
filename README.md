@@ -2,7 +2,7 @@
 
 This was built using .NET Core which is cross platform, however it's using SQL Server so the DB scripts may not run on a different DB platform.
 
-To review the code, I recommend downloading [Visual Studio Code](https://code.visualstudio.com/). It's cross platform and will make it easier to review C# code. Once installed, you will need to install a C# language extension. Follow the instructions [here](https://code.visualstudio.com/docs/languages/csharp).
+To review the code, I recommend downloading [Visual Studio Code](https://code.visualstudio.com/). It's cross platform and will make it easier to review the C# code. Once installed, you will need to install a C# language extension. Follow the instructions [here](https://code.visualstudio.com/docs/languages/csharp).
 
 ## Project overview
 This is the api that the client app connects to. It is built using [ASP.NET Core](https://github.com/aspnet/Home) and connects to a SQL Server Express database. 
