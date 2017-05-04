@@ -33,6 +33,11 @@ There are 4 folders in this project:
   * RankingService - gets ranking data using filters
 * Data - data layer. Abstracts database. Uses EF Core to generate DB schema and handle any updates to schema. StatContext is used to interact with the DB using model objects.
 
+### DB Schema
+I elected to go with a star schema approach since the dimension tables can drive the UI. Imported data from the .csv file is dumped to the staging table. From there, stored procedures populate the dimension tables and fact table.
+
+(https://github.com/jimwheaton/statapi/statmodel.png)
+
 ### Build instructions
 For convenience, this API is running on a VM on Azure. If you're feeling brave and want to build this locally (I believe you're on Macs?) then follow the instructions [here](https://docs.microsoft.com/en-us/aspnet/core/tutorials/your-first-mac-aspnet). You may run into issues with generating the database as the scripts are specific to SQL Server. Let me know if you want to try to build/run this locally and I'll assist you.
 
