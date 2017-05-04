@@ -49,32 +49,5 @@ namespace Stat.Controllers
         {
             return Ok(_rankingsService.GetRankings(site, market, device, keyword, start, end, weighted));
         }
-
-        //[HttpGet]
-        //[Route("[controller].csv")]
-        ////[Produces("text/csv")]
-        //public IActionResult GetCsv(
-        //string site,
-        //string market,
-        //string device,
-        //string keyword,
-        //DateTime? start,
-        //DateTime? end,
-        //bool weighted)
-        //{
-        //    var csv = _rankingsService.GetRankings(site, market, device, keyword, start, end, weighted);
-        //    var response = new HttpResponseMessage(HttpStatusCode.OK);
-        //    response.Content = new StreamContent(stream);
-        //    response.Content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
-        //    response.Content.Headers.ContentDisposition = new ContentDispositionHeaderValue("attachment")
-        //    {
-        //        FileName = "Testcsv.csv"
-        //    };
-
-        //    return ResponseMessage(response);
-        //}
-
-
-
     }
 }
