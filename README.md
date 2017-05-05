@@ -31,7 +31,9 @@ There are 4 folders in this project:
 * Services - app services:
   * CsvService - imports CSV data to the database. As mentioned above, CSV must be tab delimited
   * RankingService - gets ranking data using filters
-* Data - data layer. Abstracts database. Uses EF Core to generate DB schema and handle any updates to schema. StatContext is used to interact with the DB using model objects.
+* Data - data layer:
+  * StatContext - Abstracts database. Uses EF Core to generate DB schema and handle any updates to schema. Used to interact with the DB with strongly typed model objects.
+  * /Sql - scripts for stored procedures and indexes
 
 ### DB Schema
 Since this is a "reporting" app, I elected to go with a star schema. The dimension tables can be used to drive the UI. For performance reasons, imported data from the .csv file is first dumped to the staging table. From there, stored procedures populate the dimension tables and fact table (KeywordRanks).
